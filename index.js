@@ -51,5 +51,5 @@ app.use(errorHandler);
 //listening
 var PORT = process.env.PORT || 80;
 app.listen(PORT, function() {
-  console.log("started at port: " + PORT);
+  console.log("\nstarted at port: " + PORT + "\n");
 });
