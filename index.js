@@ -1,1 +1,3 @@
-console.log("staring...");
+
+const dotenv = require('dotenv');
+dotenv.config();

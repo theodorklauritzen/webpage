@@ -25,5 +25,10 @@
   "bugs": {
     "url": "https://github.com/xupertheo/webpage/issues"
   },
-  "homepage": "https://github.com/xupertheo/webpage#readme"
+  "homepage": "https://github.com/xupertheo/webpage#readme",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "express": "^4.15.3",
+    "fs": "0.0.1-security"
+  }
 }
