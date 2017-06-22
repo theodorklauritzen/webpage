@@ -14,7 +14,7 @@ console.log("installing: " + "express-handlebars");
 const handlebars = require("express-handlebars");
 app.engine("hbs", handlebars({
   extname: "hbs",
-  defaultLayout: "layout",
+  defaultLayout: "main",
   layoutsDir: __dirname + "/views/layouts/"
 }));
 app.set("views", __dirname + "/views");
