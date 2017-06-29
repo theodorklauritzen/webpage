@@ -8,3 +8,7 @@ First you need to install node.  You can do it here => https://nodejs.org/en/dow
 `npm i`.  The command will downlaod the dependecies needed.  Finally you start the server with `npm start`.
 
 Note that I recommend to change the `.env.example` file to `.env`.  The server will run without it, but you can use it to change the port the server lisens on for example.
+
+## LICENSE
+
+This repository is open source, however you have to read the `LICENSE` file to use it.  (It's just the normal MIT).  Note that the dependencies you install with npm can have different licenses.
