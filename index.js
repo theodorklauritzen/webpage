@@ -33,9 +33,15 @@ console.log("installing: " + "cookie-parser");
 const cookieParser = require("cookie-parser");
 app.use(cookieParser());
 
-//authentication - tracking, auth, logging
-const authentication = require('./preRoutes/authentication.js');
-app.use(authentication);
+//express-session
+console.log("installing: " + "express-session");
+const expressSession = require("express-session");
+if(!process.env.SESSION_SECRET) throw new Error("Then SESSION_SECRET must be defined!  More info here => https://github.com/xupertheo/webpage/wiki/express-session")
+app.use(expressSession({
+  secret: process.env.SESSION_SECRET,
+  resave: false,
+  saveUninitialized: true
+}));
 
 //routing
 const router = require('./routes/index.js');
