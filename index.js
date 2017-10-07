@@ -6,7 +6,7 @@ dotenv.config();
 
 //express
 const express = require('express');
-var app = express();
+let app = express();
 
 //middleware
 //handlebars
@@ -55,7 +55,7 @@ const errorHandler = require('./preRoutes/errorHandler.js');
 app.use(errorHandler);
 
 //listening
-var PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 80;
 app.listen(PORT, function() {
   console.log("\nstarted at port: " + PORT + "\n");
 });

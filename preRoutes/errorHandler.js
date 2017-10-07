@@ -1,13 +1,13 @@
 const fs = require('fs');
 
 const express = require('express');
-var router = express.Router();
+let router = express.Router();
 
 //Try to find the file in views/public
 router.use(function(req, res, next) {
-  var splitPath = req.url.split("");
+  let splitPath = req.url.split("");
   splitPath.splice(0, 1);
-  var pathString = splitPath.join("").split("?")[0];
+  let pathString = splitPath.join("").split("?")[0];
 
   if(splitPath[splitPath.length - 1] === "/" || splitPath.length === 0) {
     pathString += "index";
